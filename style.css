@@ -22,9 +22,12 @@ body {
     grid-template-rows: repeat(3, 1fr);
 
     gap: 24px; /* Define el espacio entre filas y columnas */
-    
-    row-gap: 50px; /* Define el espacio entre filas */
-    column-gap: 10px; /* Define el espacio entre coulmnas */
+
+    grid-auto-flow: row; /* Es el valor por default */
+    /* grid-auto-flow: column; /* Este valor cambia el flujo a columnas */ 
+
+    /* Esto no es de grid */
+    direction: rtl; /* Rigth To Left */
 }
 
 .item1 {
@@ -45,4 +48,12 @@ body {
 
 .item5{
     background-color: pink;
+}
+
+.container div{
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
 }
