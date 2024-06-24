@@ -12,37 +12,37 @@ body {
 }
 
 .container {
-    background-color: lavenderblush;
+    /* background-color: lavenderblush; */
     width: 31.25rem;
     height: 31.25rem;
     margin: 0 auto; /* Esto centra el elemento cunado tiene el ancho definido */
 
     display: grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: repeat(3, 100px);
-    grid-template-areas: 
-        "header header header"
-        "main   main   sidebar"
-        "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 
+    gap: 24px; /* Define el espacio entre filas y columnas */
+    
+    row-gap: 50px; /* Define el espacio entre filas */
+    column-gap: 10px; /* Define el espacio entre coulmnas */
 }
 
-.header {
-    background-color: lightblue;
-    grid-area: header;
+.item1 {
+    background-color: blueviolet;
 }
 
-.main {
-    background-color: lightcyan;
-    grid-area: main;
+.item2{
+    background-color: violet;
 }
 
-.sidebar {
-    background-color: lightskyblue;
-    grid-area: sidebar;
+.item3{
+    background-color: purple;
 }
 
-.footer {
-    background-color: lightslategray;
-    grid-area: footer;
+.item4{
+    background-color: plum;
+}
+
+.item5{
+    background-color: pink;
 }
